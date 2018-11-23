@@ -7,9 +7,16 @@ import (
 )
 
 func InitGin() {
+	routing()
+}
+
+func routing() {
 	router := gin.Default()
 
-	router.GET("/ping", pingAction)
+	routerApiV1 := router.Group("/api/v1")
+	{
+		routerApiV1.GET("/ping", pingAction)
+	}
 
 	http.Handle("/", router)
 }
