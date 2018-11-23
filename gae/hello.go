@@ -1,22 +1,21 @@
 package gae
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
 
-func InitNetHTTP() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "Hello, world!")
-	})
+func InitGin() {
+	router := gin.Default()
+
+	router.GET("/ping", pingAction)
+
+	http.Handle("/", router)
 }
 
-func InitGin() {
-	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello, world!!!")
+func pingAction(c *gin.Context) {
+	c.JSON(200, gin.H{
+		"message": "pong",
 	})
-	http.Handle("/", r)
 }
