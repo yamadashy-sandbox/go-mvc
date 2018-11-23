@@ -1,9 +1,9 @@
 package main
 
 import (
-	"samples"
+	"kiokumushi-api/gae"
 )
 
 func init() {
-	samples.InitGin()
+	gae.InitGin()
 }

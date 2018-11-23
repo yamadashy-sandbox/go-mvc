@@ -1,4 +1,4 @@
-package samples
+package gae
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ func InitNetHTTP() {
 func InitGin() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello, world!!")
+		c.String(http.StatusOK, "Hello, world!!!")
 	})
 	http.Handle("/", r)
 }
