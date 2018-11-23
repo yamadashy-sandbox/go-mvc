@@ -107,3 +107,8 @@ fabric.properties
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/go,code,jetbrains
+
+
+src/vendor
+/pkg/
+/bin/
