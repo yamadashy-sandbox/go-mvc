@@ -1,4 +1,4 @@
-package main
+package app
 
 import (
 	"kiokumushi-api/gae"
