@@ -5,5 +5,5 @@ import (
 )
 
 func init() {
-	routes.MapAPIRoutes()
+	routes.MapRoutes()
 }

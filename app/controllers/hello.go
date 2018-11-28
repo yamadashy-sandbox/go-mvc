@@ -8,7 +8,7 @@ import (
 
 type HelloController struct{}
 
-func (h HelloController) Ping(c *gin.Context) {
+func (h HelloController) Status(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "pong",
 	})
