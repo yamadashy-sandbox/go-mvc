@@ -11,10 +11,11 @@ gcloudでdepなどが使えないので、一旦グローバルにインスト�
 # デバッグ
 ローカルサーバー起動
 ```
-dev_appserver.py app.yaml
+dev_appserver.py gae/app.yaml
 ```
 
 # デプロイ
 ```
-gcloud app deploy --version <バージョン番号>
+$ cd gae
+$ gcloud app deploy --version <バージョン番号>
 ```
