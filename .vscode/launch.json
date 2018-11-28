@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach",
+            "type": "python",
+            "request": "attach",
+            "host": "localhost",
+            "port": 3000,
+            "remoteRoot": "${workspaceRoot}",
+            "localRoot": "${workspaceRoot}",
+            "preLaunchTask": "python"
+        }
+    ]
+}
