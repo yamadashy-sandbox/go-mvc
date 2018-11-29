@@ -1,9 +1,9 @@
 package app
 
 import (
-	"kiokumushi-api/app/routes"
+	"kiokumushi-api/public"
 )
 
 func init() {
-	routes.MapRoutes()
+	public.Run()
 }
