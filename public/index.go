@@ -3,7 +3,7 @@ package public
 import (
 	"net/http"
 
-	"kiokumushi-api/app/routes"
+	"kiokumushi-api/routes"
 
 	"github.com/gin-gonic/gin"
 )
