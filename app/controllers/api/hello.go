@@ -1,4 +1,4 @@
-package controllers
+package api
 
 import (
 	"net/http"
@@ -8,8 +8,8 @@ import (
 
 type HelloController struct{}
 
-func (h HelloController) Status(c *gin.Context) {
+func (h HelloController) Index(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"message": "pong",
+		"message": "hello!",
 	})
 }

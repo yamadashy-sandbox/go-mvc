@@ -1,4 +1,4 @@
-package controllers
+package web
 
 import (
 	"net/http"
@@ -8,6 +8,6 @@ import (
 
 type HealthController struct{}
 
-func (h HealthController) Status(c *gin.Context) {
+func (h HealthController) Index(c *gin.Context) {
 	c.String(http.StatusOK, "Working!")
 }
