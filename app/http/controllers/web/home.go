@@ -9,5 +9,7 @@ import (
 type HomeController struct{}
 
 func (h HomeController) Index(c *gin.Context) {
-	c.String(http.StatusOK, "トップページ")
+	c.HTML(http.StatusOK, "home-index.tmpl", gin.H{
+		"a": "a",
+	})
 }

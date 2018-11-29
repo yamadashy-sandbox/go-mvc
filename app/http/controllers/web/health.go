@@ -9,5 +9,5 @@ import (
 type HealthController struct{}
 
 func (h HealthController) Index(c *gin.Context) {
-	c.String(http.StatusOK, "Working!")
+	c.String(http.StatusOK, "OK")
 }

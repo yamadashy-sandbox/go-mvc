@@ -7,13 +7,29 @@ import (
 )
 
 func MapWebRoutes(router *gin.Engine) {
-	// Controller
+	// マッピング
+	mapping(router)
+
+	// ビューを読み込み
+	router.LoadHTMLGlob("../resources/views/web/**/*")
+}
+
+func mapping(router *gin.Engine) {
+	// トップページ
 	homeController := new(web.HomeController)
+	{
+		router.GET("/", homeController.Index)
+	}
+
+	// ヘルスチェック
 	healthController := new(web.HealthController)
+	{
+		router.GET("/health", healthController.Index)
+	}
 
-	// Routes
-	router.GET("/", homeController.Index)
-	router.GET("/health", healthController.Index)
-
-	// http.Handle("/", router)
+	// ムシ
+	mushiController := new(web.MushiController)
+	{
+		router.GET("/mushi", mushiController.Index)
+	}
 }
