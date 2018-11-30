@@ -8,7 +8,7 @@ import (
 
 func MapAPIRoutes(router *gin.Engine) {
 	// Controller
-	helloController := new(api.HelloController)
+	helloController := &api.HelloController{}
 
 	// Routes
 	routerAPIV1 := router.Group("/api/v1")

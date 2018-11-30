@@ -16,19 +16,19 @@ func MapWebRoutes(router *gin.Engine) {
 
 func mapping(router *gin.Engine) {
 	// トップページ
-	homeController := new(web.HomeController)
+	homeController := &web.HomeController{}
 	{
 		router.GET("/", homeController.Index)
 	}
 
 	// ヘルスチェック
-	healthController := new(web.HealthController)
+	healthController := &web.HealthController{}
 	{
 		router.GET("/health", healthController.Index)
 	}
 
 	// ムシ
-	mushiController := new(web.MushiController)
+	mushiController := &web.MushiController{}
 	{
 		router.GET("/mushi", mushiController.Index)
 	}

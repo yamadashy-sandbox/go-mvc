@@ -8,7 +8,7 @@ import (
 
 type MushiController struct{}
 
-func (h MushiController) Index(c *gin.Context) {
+func (h *MushiController) Index(c *gin.Context) {
 	c.HTML(http.StatusOK, "mushi-index.tmpl", gin.H{
 		"a": "a",
 	})

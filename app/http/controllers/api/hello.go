@@ -8,7 +8,7 @@ import (
 
 type HelloController struct{}
 
-func (h HelloController) Index(c *gin.Context) {
+func (h *HelloController) Index(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "hello!",
 	})
