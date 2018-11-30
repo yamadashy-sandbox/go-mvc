@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"kiokumushi-api/app/http/controllers/api"
+	"github.com/stivan622/kiokumushi-api/app/http/controllers/api"
 
 	"github.com/gin-gonic/gin"
 )

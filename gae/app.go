@@ -1,7 +1,7 @@
 package app
 
 import (
-	"kiokumushi-api/public"
+	"github.com/stivan622/kiokumushi-api/public"
 )
 
 func init() {

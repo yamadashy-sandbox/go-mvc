@@ -1,7 +1,7 @@
 package db
 
 // import (
-// 	"kiokumushi-api/app/config"
+// 	"github.com/stivan622/kiokumushi-api/app/config"
 // )
 
 // var db *dynamodb.DynamoDB
