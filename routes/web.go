@@ -3,6 +3,7 @@ package routes
 import (
 	"github.com/stivan622/kiokumushi-api/app/http/controllers/web"
 
+	gintemplate "github.com/foolin/gin-template"
 	"github.com/gin-gonic/gin"
 )
 
@@ -10,8 +11,8 @@ func MapWebRoutes(router *gin.Engine) {
 	// マッピング
 	mapping(router)
 
-	// ビューを読み込み
-	router.LoadHTMLGlob("../resources/views/web/**/*")
+	// HTMLレンダラーの設定
+	settingHTMLRenderer(router)
 }
 
 func mapping(router *gin.Engine) {
@@ -32,4 +33,15 @@ func mapping(router *gin.Engine) {
 	{
 		router.GET("/mushi", mushiController.Index)
 	}
+}
+
+func settingHTMLRenderer(router *gin.Engine) {
+
+	//new template engine
+	router.HTMLRender = gintemplate.New(gintemplate.TemplateConfig{
+		Root:      "../resources/views/web/",
+		Extension: ".tpl",
+		Master:    "layouts/main",
+	})
+
 }
