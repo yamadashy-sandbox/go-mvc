@@ -21,13 +21,13 @@ Laravelっぽい構成
 
 ### クローン
 ```
-$ sudo go get -u github.com/stivan622/kiokumushi-api
+$ go get -u github.com/stivan622/kiokumushi-api
 ```
 
 ### 環境構築
 必要なライブラリを読み込む
 ```
-$ sudo go get -u github.com/gin-gonic/gin
+$ go get -u github.com/gin-gonic/gin
 ```
 
 gcloudでdepなどが使えないので、一旦グローバルにインストールする
