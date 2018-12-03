@@ -40,6 +40,5 @@ dev_appserver.py gae/app.yaml
 
 ### デプロイ
 ```
-$ cd gae
 $ gcloud app deploy --version <バージョン番号>
 ```
