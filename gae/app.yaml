@@ -2,5 +2,7 @@ runtime: go
 api_version: go1.9
 
 handlers:
+- url: /assets
+  static_dir: ../assets
 - url: /.*
   script: _go_app
