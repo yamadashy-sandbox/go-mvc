@@ -1,0 +1,16 @@
+version: '2'
+services:
+  app:
+    image: mercari/appengine-go:1.9
+    working_dir: /go/src/github.com/stivan622/kiokumushi-api
+    command: dev_appserver.py ./appengine --host 0.0.0.0 --admin_host 0.0.0.0 --skip_sdk_update_check
+    ports:
+      - 8080:8080
+      - 8000:8000
+    volumes:
+      - .:/go/src/github.com/stivan622/kiokumushi-api
+  dep:
+    image: instrumentisto/dep:0.5.0
+    working_dir: /go/src/github.com/stivan622/kiokumushi-api
+    volumes:
+      - .:/go/src/github.com/stivan622/kiokumushi-api

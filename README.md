@@ -25,9 +25,15 @@ $ go get -u github.com/stivan622/kiokumushi-api
 ```
 
 ### 環境構築
-必要なライブラリを読み込む
+Dockerのインストール
 ```
-$ go get -u github.com/gin-gonic/gin
+$ brew install docker
+$ brew cask install docker
+```
+
+dep初期化
+```
+$ docker-compose run --rm dep init
 ```
 
 gcloudでdepなどが使えないので、一旦グローバルにインストールする
@@ -35,7 +41,7 @@ gcloudでdepなどが使えないので、一旦グローバルにインスト�
 ### デバッグ
 ローカルサーバー起動
 ```
-dev_appserver.py gae/app.yaml
+$ docker-compose up app
 ```
 
 ### デプロイ
