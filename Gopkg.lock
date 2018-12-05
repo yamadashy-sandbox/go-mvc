@@ -31,36 +31,12 @@
   version = "v1.3.0"
 
 [[projects]]
-  digest = "1:ec6f9bf5e274c833c911923c9193867f3f18788c461f76f05f62bb1510e0ae65"
-  name = "github.com/go-sql-driver/mysql"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "72cd26f257d44c1114970e19afddcd812016007e"
-  version = "v1.4.1"
-
-[[projects]]
   digest = "1:97df918963298c287643883209a2c3f642e6593379f97ab400c2a2e219ab647d"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
   pruneopts = "UT"
   revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
   version = "v1.2.0"
-
-[[projects]]
-  digest = "1:d4e6e8584d0a94ce567d237e19192dae44d57d2767ac7e1d7fbf5626d176381a"
-  name = "github.com/jinzhu/gorm"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "472c70caa40267cb89fd8facb07fe6454b578626"
-  version = "v1.9.2"
-
-[[projects]]
-  branch = "master"
-  digest = "1:fd97437fbb6b7dce04132cf06775bd258cce305c44add58eb55ca86c6c325160"
-  name = "github.com/jinzhu/inflection"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "04140366298a54a039076d798123ffa108fff46c"
 
 [[projects]]
   digest = "1:be97e109f627d3ba8edfef50c9c74f0d0c17cbe3a2e924a8985e4804a894f282"
@@ -86,14 +62,6 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:4cb50166dcefa670374c119f2f84fedb18d31e23c56da9aa6ffed92784e94a96"
-  name = "github.com/wcl48/valval"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "fd786aee15363fe6b0ccbf98bbfa3ef22e23185b"
-
-[[projects]]
-  branch = "master"
   digest = "1:76ee51c3f468493aff39dbacc401e8831fbb765104cbf613b89bef01cf4bad70"
   name = "golang.org/x/net"
   packages = ["context"]
@@ -109,11 +77,10 @@
   revision = "4ed8d59d0b35e1e29334a206d1b3f38b1e5dfb31"
 
 [[projects]]
-  digest = "1:e311d37c69f707d62459f7ea70eee778ba87408688216a2e1ed5f0cb968682a8"
+  digest = "1:8b2785e7f1ca0f834c32cd732933c1e519eaa1a4a68cb2a7205162fc66c1d074"
   name = "google.golang.org/appengine"
   packages = [
     ".",
-    "cloudsql",
     "internal",
     "internal/app_identity",
     "internal/base",
@@ -147,9 +114,6 @@
   input-imports = [
     "github.com/foolin/gin-template",
     "github.com/gin-gonic/gin",
-    "github.com/go-sql-driver/mysql",
-    "github.com/jinzhu/gorm",
-    "github.com/wcl48/valval",
     "google.golang.org/appengine",
   ]
   solver-name = "gps-cdcl"
